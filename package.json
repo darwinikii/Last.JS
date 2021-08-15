@@ -5,9 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-	"build": "npm install",
-	"start": "node index.js"
+    "build": "npm install discord.js fs @discordjs/rest",
+    "start": "node index.js"
   },
   "author": "darwinikii",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "0.1.0-canary.0",
+    "discord.js": "^13.1.0",
+    "fs": "0.0.1-security"
+  }
 }
