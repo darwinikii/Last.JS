@@ -1,0 +1,13 @@
+{
+  "name": "lastjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+	"build": "npm install",
+	"start": "node index.js"
+  },
+  "author": "darwinikii",
+  "license": "ISC"
+}
