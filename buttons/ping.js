@@ -17,7 +17,7 @@ const row = new Discord.MessageActionRow()
 interaction.message.channel.send({ content: "Pong 🏓(" + client.ws.ping + "MS)", components: [row] })
   const embed = new Discord.MessageEmbed({
                   title: 'Error occurred',
-                  description: description,
+                  description: "desc bro",
                   type: 'rich',
                  });
 
