@@ -14,7 +14,15 @@ const row = new Discord.MessageActionRow()
      .setLabel("GODMODE!!")
      .setStyle("DANGER")
     );
-  interaction.message.channel.send({ content: "Pong 🏓(" + client.ws.ping + "MS)", components: [row] })
+interaction.message.channel.send({ content: "Pong 🏓(" + client.ws.ping + "MS)", components: [row] })
+  const embed = new Discord.MessageEmbed({
+                  title: 'Error occurred',
+                  description: description,
+                  type: 'rich',
+                 });
+
+
+		await interaction.channel.send({ embeds: [embed] });
   interaction.message.delete();
 
 }
