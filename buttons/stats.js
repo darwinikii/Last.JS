@@ -15,11 +15,12 @@ exports.run = async (client, interaction) => {
  // interaction.message.channel.send("za", false, undefined, [embed], undefined, "Deneme")
  // interaction.message.delete();
 
-		const embed = new MessageEmbed()
-			.setColor('#0099ff')
-			.setTitle('Some title')
-			.setURL('https://discord.js.org')
-			.setDescription('Some description here');
+		const embed = new Discord.MessageEmbed({
+                  title: 'Error occurred',
+                  description: description,
+                  type: 'rich',
+                 });
 
-		await interaction.reply({ content: 'Pong!', ephemeral: true, embeds: [embed], components: [row] });
+
+		await interaction.reply({ embeds: [embed] });
 }
