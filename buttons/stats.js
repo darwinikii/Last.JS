@@ -5,7 +5,7 @@ require('moment-duration-format');
 exports.run = async (client, interaction) => {
     let embedd = new Discord.MessageEmbed("color")
     .setTitle('Last.JS')
-    .setFooter(`Server Shard: ${interaction.guild.shardID+1} `)
+//    .setFooter(`Server Shard: ${interaction.guild.shardID+1} `)
     .setColor('RED')
     .addField("• RAM", (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + " MB", true)
     .addField("• Total server", client.guilds.cache.size)
