@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS] });
 const { REST } = require('@discordjs/rest');
-const { Routes } = require('discord-api-types/v9');
 const fs = require("fs");
 require("./utils/eventLoader")(client);
 const rest = new REST({ version: '9' }).setToken(process.env.token);
@@ -21,7 +20,7 @@ fs.readdir("./commands/", async (err, files) => {
     //await rest.delete('/applications/823855642128810014/commands/874229375447494716');
    });
  console.log('Started refreshing application (/) commands.');
-// await rest.put(Routes.applicationCommands("823855642128810014"),{ body: commands });
+// await rest.put("/applications/823855642128810014/commands/",{ body: commands });
   console.log('Successfully reloaded application (/) commands.');
  });
 
