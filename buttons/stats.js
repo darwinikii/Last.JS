@@ -14,10 +14,6 @@ exports.run = async (client, interaction) => {
     .setThumbnail(client.user.avatarURL())
  // interaction.message.channel.send("za", false, undefined, [embed], undefined, "Deneme")
  // interaction.message.delete();
-  const row = new MessageActionRow()
-			.addComponents(
-				// ...
-			);
 
 		const embed = new MessageEmbed()
 			.setColor('#0099ff')
