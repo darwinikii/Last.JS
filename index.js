@@ -29,4 +29,4 @@ client.on('interactionCreate', async interaction => {
   console.log(interaction.options)
 });
 
-client.login("ODIzODU1NjQyMTI4ODEwMDE0.YFm5Ww.4EmHBG0O8FOok3U0mJy3ASjiFOw");
+client.login("");
